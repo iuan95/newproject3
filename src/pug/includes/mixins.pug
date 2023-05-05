@@ -1,0 +1,14 @@
+mixin icon(name,mod)
+	- mod = mod || ''
+	svg(class="icon icon-" + name + ' ' + mod)
+		use(xlink:href="/img/svg/sprite.svg#" + name)
+
+
+mixin menu(vars)
+	.left-menu-main 
+		ul.left-menu-main-links 
+			each val in vars 
+				li.left-menu-main-link 	
+					a(href= val.url)= val.title  
+	
+

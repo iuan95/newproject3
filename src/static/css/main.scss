@@ -1,0 +1,68 @@
+@import "import/reset";
+@import "import/fonts";
+//@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    outline: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+:root
+{
+    --color-blue: #0078D2;
+    --color-light-blue: #EAF5FF;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-gray: #B8B8B8;
+    --color-light-gray: #D9D9D9;
+    --color-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 100%);
+    --color-blue-gradient: linear-gradient(90deg, #0082D3 0%, #0072CC 100%);
+    --color-linear-gradient: linear-gradient(226.09deg, #1EA5F9 10.23%, #0072CC 87.13%);
+}
+
+
+@import './font-mixin.scss';
+
+
+
+.icon{
+    width: 24px;
+    height: 24px;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: "Roboto";
+    background-color: #FFFFFF;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+section{
+    margin-bottom: 120px;
+
+}
+.section-title{
+    @include font-d-h2;
+    margin-bottom: 40px;
+}
+
+.left-menu-main-link{
+    @include font-d-t2;
+} 	
+@import "import/header";
+
+@import "block/index//mainslider.scss";
+@import "block/index//news.scss";
+@import "block/index//advertisement.scss";
+@import "block/index//banner.scss";
+@import "block/about//about.scss";
+@import "block/missions//missions.scss";
+@import "block/index//azc.scss";
+@import "block/leftmenu.scss";
+
